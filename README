@@ -1,0 +1,1 @@
+This small module saves and reads simple configs. In will check if config is not corrupted.
