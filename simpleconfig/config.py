@@ -56,7 +56,10 @@ class Config(object):
         self._raw_write( self._path, self._vars )
 
     def __getitem__(self, name):
-        return self._vars[ name ]
+        try:
+            return self._vars[ name ]
+        except KeyError:
+            return self._initial_vars[name
 
     def __setitem__(self, name, value ):
         self._vars[ name ] = value
