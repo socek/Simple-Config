@@ -59,7 +59,7 @@ class Config(object):
         try:
             return self._vars[ name ]
         except KeyError:
-            return self._initial_vars[name
+            return self._initial_vars[name]
 
     def __setitem__(self, name, value ):
         self._vars[ name ] = value
